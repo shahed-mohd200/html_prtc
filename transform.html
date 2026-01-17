@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 40px;
+}
+
+/* main container */
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+/* common box styling */
+.box {
+    border: 3px solid black;
+    height: 200px;
+    flex: 1;
+}
+
+/* middle box */
+.box2 {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* rows inside middle box */
+.inner {
+    display: flex;
+    gap: 15px;
+}
+
+/* small boxes */
+.small {
+    width: 70px;
+    height: 30px;
+    border: 3px solid black;
+}
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="box box1">1</div>
+
+    <div class="box box2">
+        <div class="inner">
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+        </div>
+
+        <div class="inner">
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+        </div>
+    </div>
+
+    <div class="box box3">3</div>
+</div>
+</body>
+</html>
